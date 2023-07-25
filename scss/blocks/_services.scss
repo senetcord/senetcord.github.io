@@ -1,0 +1,52 @@
+.services {
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1630px;
+  }
+
+  &__name a {
+    display: inline-flex;
+    text-align: center;
+    gap: 2px;
+    @include sectionName;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include regularTitleGradient;
+    margin-bottom: 60px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    &__item {
+      max-width: 390px;
+
+      &__icon {
+        margin-bottom: 30px;
+      }
+
+      &__title {
+        color: $basic-blue;
+        margin-bottom: 15px;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      &__text {
+        color: $basic-white;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625;
+      }
+    }
+  }
+}

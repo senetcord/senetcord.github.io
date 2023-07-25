@@ -1,0 +1,52 @@
+.team {
+  padding-bottom: 60px;
+
+  &__row {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  &__block {
+    background-color: rgba(#b3b3ba, 0.1);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+    &__sectionName a {
+      display: inline-flex;
+      @include sectionName;
+    }
+
+    &__title {
+      @include regularTitleGradient;
+      margin-bottom: 30px;
+    }
+
+    &__name {
+      color: #b3b3ba;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    &__position {
+      color: #b3b3ba;
+      font-size: 14px;
+      line-height: 1.57143;
+    }
+  }
+
+  &__img {
+    background-image: url(../img/team/olexandr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}

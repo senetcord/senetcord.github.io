@@ -1,0 +1,25 @@
+@mixin regularTitle {
+  color: $basic-white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@mixin regularTitleGradient {
+  @include regularTitle;
+  background: var(
+    --gradient-red-text,
+    linear-gradient(118deg, #f0145a 0%, #ef8080 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+}
+
+@mixin sectionName {
+  color: $basic-blue;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.gradient {
+  position: relative;
+  background: var(
+    --gradient-supersoft,
+    linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%)
+  );
+
+  border-radius: 0px 0px 12px 12px;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 97.2222222222222222%;
+    border-radius: 0px 0px 12px 12px;
+    background: #cacadb;
+    bottom: -10px;
+    left: 20px;
+    z-index: -1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 94.4444444444444444%;
+    border-radius: 0px 0px 12px 12px;
+    background: #e7e7f2;
+    bottom: -20px;
+    left: 40px;
+    z-index: -1;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1630px;
+  padding: 0 15px;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: rgba($basic-blue, 0.2);
+  cursor: pointer;
+  &:hover {
+    background-color: $basic-blue;
+  }
+}

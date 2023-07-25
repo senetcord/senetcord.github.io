@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 261px;
+  // padding-bottom: 60px;
+  color: $basic-white;
+  text-align: center;
+
+  &__title h1 {
+    position: relative;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  &__img {
+    margin-top: -420px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__container a {
+    justify-content: center;
+    display: flex;
+    transition: color 0.2s;
+    &:hover {
+      color: #f0145a;
+      div {
+        border-color: #f0145a;
+      }
+    }
+  }
+
+  &__scroll {
+    font-size: 30px;
+    line-height: 1.1;
+    height: 42px;
+    width: 42px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: -72px;
+    z-index: 1;
+    position: relative;
+
+    transition: border-color 0.25s;
+  }
+}

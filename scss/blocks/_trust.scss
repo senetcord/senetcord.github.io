@@ -1,0 +1,28 @@
+.trust {
+  margin-bottom: 60px;
+
+  &__title {
+    color: #323264;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    overflow: hidden;
+
+    &__item {
+      display: flex;
+      flex-grow: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

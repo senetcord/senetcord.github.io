@@ -1,0 +1,20 @@
+// General
+@import "./variables";
+@import "./basic";
+@import "./mixins";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/services";
+@import "./blocks/team";
+@import "./blocks/trust";
+@import "./blocks/publications";
+@import "./blocks/footer";
+
+// Adapt
+@import "./media.scss";
+
+// second page
+@import "./SE/services-entry.scss";
